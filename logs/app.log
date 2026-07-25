@@ -1,0 +1,335 @@
+2026-07-01 02:08:38,284 | INFO | database.connection | Connecting to PostgreSQL database 'student_model'
+2026-07-01 02:08:39,832 | INFO | database.connection | Connected successfully to PostgreSQL.
+2026-07-01 02:09:15,668 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:09:16,029 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:09:16,832 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.1403s | error=None | question='how many databases are exist?' | sql='SELECT COUNT(*) FROM pg_database'
+2026-07-01 02:11:08,602 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:11:09,168 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:11:09,202 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.0022s | error=None | question='How many rows are present in student_model?' | sql='SELECT COUNT(*) FROM student_table'
+2026-07-01 02:12:49,967 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:12:50,197 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:12:50,227 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.0026s | error=None | question='How many rows are present in netflix database' | sql='SELECT COUNT(*) FROM student UNION ALL SELECT COUNT(*) FROM student_table UNION ALL SELECT COUNT(*) FROM students'
+2026-07-01 02:13:17,002 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:13:17,418 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:13:17,480 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.0136s | error=None | question='Display the data of netflix database' | sql='SELECT * FROM student UNION ALL SELECT * FROM student_table UNION ALL SELECT * FROM students'
+2026-07-01 02:15:17,262 | INFO | database.connection | Connecting to PostgreSQL database 'Netflix_db'
+2026-07-01 02:15:18,125 | INFO | database.connection | Connected successfully to PostgreSQL.
+2026-07-01 02:15:34,493 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:15:35,144 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:15:35,180 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.2240s | error=None | question='Display the column of netflix database' | sql="SELECT column_name \nFROM information_schema.columns \nWHERE table_name = 'netflix_table'"
+2026-07-01 02:15:53,717 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:15:54,693 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:15:57,895 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.4196s | error=None | question='display the data of netflix database' | sql='SELECT * FROM netflix_table'
+2026-07-01 02:16:23,181 | INFO | database.connection | Connecting to PostgreSQL database 'walmart_details'
+2026-07-01 02:16:24,018 | INFO | database.connection | Connected successfully to PostgreSQL.
+2026-07-01 02:16:38,440 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:16:38,875 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:16:38,930 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.1155s | error=None | question='dislpay the column names of walmart details' | sql="SELECT column_name \nFROM information_schema.columns \nWHERE table_name = 'walmart'"
+2026-07-01 02:17:30,286 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:17:31,473 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:19:29,226 | INFO | database.connection | Connecting to PostgreSQL database 'student_model'
+2026-07-01 02:19:29,362 | INFO | database.connection | Connected successfully to PostgreSQL.
+2026-07-01 02:19:45,794 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:19:46,083 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:19:46,108 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.0059s | error=None | question='give me the data' | sql='SELECT id, name, class, section, marks FROM student UNION ALL SELECT id, name, class, section, marks FROM student_table UNION ALL SELECT id, name, class, section, marks FROM students'
+2026-07-01 02:20:08,201 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:20:09,353 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:20:09,679 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:20:09,990 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:20:10,027 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=2 | exec_time=0.0022s | error=None | question='change the row 5 name to Arman' | sql='SELECT * FROM students WHERE id = 5'
+2026-07-01 02:20:32,240 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:20:32,721 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:20:32,761 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.0058s | error=None | question='Now show me the data' | sql='SELECT id, name, class, section, marks FROM student UNION ALL SELECT id, name, class, section, marks FROM student_table UNION ALL SELECT id, name, class, section, marks FROM students'
+2026-07-01 02:21:57,829 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:21:58,137 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:21:58,427 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:21:58,719 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:21:59,007 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:21:59,059 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=3 | exec_time=0.0041s | error=None | question='Update the row 5 name Aman to Arman khan' | sql="UPDATE students SET name = 'Arman Khan' WHERE id = 5 RETURNING *"
+2026-07-01 02:22:20,286 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:22:20,831 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-01 02:22:20,874 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.0016s | error=None | question='Now show me the data' | sql='SELECT * FROM student_table'
+2026-07-03 01:42:31,600 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 01:42:31,720 | ERROR | __main__ | Connection failed: No module named 'pymysql'
+2026-07-03 01:42:38,632 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 01:42:38,635 | ERROR | __main__ | Connection failed: No module named 'pymysql'
+2026-07-03 01:42:42,713 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 01:42:42,718 | ERROR | __main__ | Connection failed: No module named 'pymysql'
+2026-07-03 01:43:35,329 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 01:43:35,335 | ERROR | __main__ | Connection failed: No module named 'pymysql'
+2026-07-03 01:43:37,710 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 01:43:37,714 | ERROR | __main__ | Connection failed: No module named 'pymysql'
+2026-07-03 02:07:11,392 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:07:11,979 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@root' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:07:11,981 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@root' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:08:04,786 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:08:04,962 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@root' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:08:04,963 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@root' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:08:08,731 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:08:08,900 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@root' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:08:08,901 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@root' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:08:38,345 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:08:38,497 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@root' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:08:38,498 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@root' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:08:53,111 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:08:53,299 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:08:53,300 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:09:03,304 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:09:03,475 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:09:03,476 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:09:04,856 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:09:05,007 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:09:05,008 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:11:01,006 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:11:01,164 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:11:01,165 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:11:02,811 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:11:02,975 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:11:02,976 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:11:03,273 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:11:03,445 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:11:03,446 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:16,800 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:16:17,000 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:17,002 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:19,969 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:16:20,137 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:20,138 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:27,143 | INFO | database.connection | Connecting to MariaDB database 'student_db'
+2026-07-03 02:16:27,335 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:27,336 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:29,295 | INFO | database.connection | Connecting to MariaDB database 'student_db'
+2026-07-03 02:16:29,563 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:29,564 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:37,782 | INFO | database.connection | Connecting to MariaDB database 'student_db'
+2026-07-03 02:16:37,911 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:37,912 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:39,235 | INFO | database.connection | Connecting to MariaDB database 'student_db'
+2026-07-03 02:16:39,528 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:16:39,530 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@MariaDB' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:09,302 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:25:09,481 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:09,482 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:11,109 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:25:11,288 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:11,289 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:34,460 | INFO | database.connection | Connecting to MariaDB database 'student_db'
+2026-07-03 02:25:34,637 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:34,638 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:41,409 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:25:41,562 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:41,563 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:42,339 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:25:42,496 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:42,497 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:47,229 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:25:47,405 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:47,406 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:48,013 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:25:48,178 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:25:48,179 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:26:01,213 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:26:01,377 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:26:01,378 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:26:01,816 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:26:01,967 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:26:01,968 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:27:57,273 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:27:57,445 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:27:57,446 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:27:58,574 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:27:58,997 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:27:59,000 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:29:04,374 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:29:04,536 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@localhost' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:29:04,537 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@localhost' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:29:06,385 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:29:06,534 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@localhost' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:29:06,535 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@localhost' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:29:58,347 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:29:58,531 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:29:58,532 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:29:59,291 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:29:59,441 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:29:59,442 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@DESKTOP-64JVP8J' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:43:26,357 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-03 02:43:27,602 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@localhost' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-03 02:43:27,603 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on '123@localhost' ([Errno 11003] getaddrinfo failed)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 16:17:06,135 | INFO | database.connection | Connecting to PostgreSQL database 'hospital_db'
+2026-07-21 16:17:09,631 | INFO | database.connection | Connected successfully to PostgreSQL.
+2026-07-21 16:17:43,078 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-21 16:17:43,901 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-21 16:17:44,581 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.5224s | error=None | question='give me all table name in hospital dabtabse' | sql="SELECT tablename FROM pg_catalog.pg_tables WHERE schemaname = 'public'"
+2026-07-21 16:19:01,780 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-21 16:19:02,399 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-21 16:19:07,553 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.2892s | error=None | question='give me data of those type of patients who have cancer' | sql="SELECT p.patient_id, p.name, p.age, p.gender, p.blood_type, m.medical_condition, m.medication, m.test_results \nFROM patients p \nJOIN medical_records m ON p.patient_id = m.patient_id \nWHERE m.medical_condition = 'Cancer'"
+2026-07-21 16:20:01,064 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-21 16:20:01,360 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-21 16:20:01,395 | INFO | __main__ | QUERY | db_type=PostgreSQL | retries=0 | exec_time=0.0023s | error=None | question='Tell me something about machine learning' | sql="SELECT 'Machine learning is not related to the provided database schema' AS message"
+2026-07-21 17:05:43,034 | INFO | database.connection | Connecting to MariaDB database 'student'
+2026-07-21 17:05:44,491 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:05:44,493 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:06:54,275 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-21 17:06:54,437 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:06:54,438 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:07:02,985 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-21 17:07:03,177 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:07:03,178 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:07:51,884 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-21 17:07:52,196 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:07:52,198 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:15:42,202 | INFO | database.connection | Connecting to MariaDB database 'Student'
+2026-07-21 17:15:42,337 | ERROR | database.connection | Connection to MariaDB failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:15:42,432 | ERROR | __main__ | Connection failed: (pymysql.err.OperationalError) (1049, "Unknown database 'student'")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 17:17:28,040 | INFO | database.connection | Connecting to MariaDB database 'student_db'
+2026-07-21 17:17:28,399 | INFO | database.connection | Connected successfully to MariaDB.
+2026-07-21 17:18:22,390 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-21 17:18:22,987 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-21 17:18:23,713 | INFO | __main__ | QUERY | db_type=MariaDB | retries=0 | exec_time=0.0543s | error=None | question='Give me data from Students table' | sql='SELECT * FROM students'
+2026-07-21 20:10:18,916 | INFO | database.connection | Connecting to SQL Server database 'Student'
+2026-07-21 20:10:35,330 | ERROR | database.connection | Connection to SQL Server failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 20:10:35,335 | ERROR | __main__ | Connection failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 20:11:26,510 | INFO | database.connection | Connecting to SQL Server database 'Student'
+2026-07-21 20:11:42,285 | ERROR | database.connection | Connection to SQL Server failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-21 20:11:42,287 | ERROR | __main__ | Connection failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 17:47:58,536 | INFO | database.connection | Connecting to SQL Server database 'Student'
+2026-07-25 17:48:14,101 | ERROR | database.connection | Connection to SQL Server failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: A non-recoverable error occurred during a database lookup.\r\n (11003) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11003)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 17:48:14,105 | ERROR | __main__ | Connection failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: A non-recoverable error occurred during a database lookup.\r\n (11003) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11003)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 18:00:44,369 | INFO | database.connection | Connecting to SQL Server database 'Student'
+2026-07-25 18:00:59,651 | ERROR | database.connection | Connection to SQL Server failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: A non-recoverable error occurred during a database lookup.\r\n (11003) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11003)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 18:00:59,654 | ERROR | __main__ | Connection failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: A non-recoverable error occurred during a database lookup.\r\n (11003) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (11003)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 18:08:42,543 | ERROR | __main__ | Connection failed: SQL Server connection is missing required field(s): database
+2026-07-25 18:08:50,433 | ERROR | __main__ | Connection failed: SQL Server connection is missing required field(s): database
+2026-07-25 18:09:17,080 | INFO | database.connection | Connecting to SQL Server database 'Student'
+2026-07-25 18:09:33,065 | ERROR | database.connection | Connection to SQL Server failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 18:09:33,184 | ERROR | __main__ | Connection failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 18:11:21,737 | INFO | database.connection | Connecting to SQL Server database 'Student'
+2026-07-25 18:11:37,732 | ERROR | database.connection | Connection to SQL Server failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to localhost,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 18:11:37,735 | ERROR | __main__ | Connection failed: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 18 for SQL Server]TCP Provider: No connection could be made because the target machine actively refused it.\r\n (10061) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 18 for SQL Server]Login timeout expired (0); [08001] [Microsoft][ODBC Driver 18 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to localhost,1433. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (10061)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-07-25 22:16:04,555 | INFO | database.connection | Connecting to SQLite database 'F:\Desktop\Chatsql_agentic\Chatsql\database\Student.db'
+2026-07-25 22:16:04,740 | INFO | database.connection | Connected successfully to SQLite.
+2026-07-25 22:16:49,324 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:16:49,406 | INFO | __main__ | QUERY | db_type=SQLite | retries=0 | exec_time=0.0341s | error=None | question='what is the table name in the databse' | sql="SELECT name FROM sqlite_master WHERE type='table'"
+2026-07-25 22:17:11,146 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:17:11,483 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:17:11,644 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:17:11,912 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:17:11,928 | INFO | __main__ | QUERY | db_type=SQLite | retries=3 | exec_time=0.0009s | error=(sqlite3.OperationalError) no such column: NOT_NULL
+[SQL: SELECT name, type, NOT_NULL, dflt_value, pk FROM sqlite_master]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) | question='Give me all the data' | sql='SELECT name, type, NOT_NULL, dflt_value, pk FROM sqlite_master'
+2026-07-25 22:17:51,684 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:17:51,837 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:17:51,992 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:17:52,134 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:17:52,138 | INFO | __main__ | QUERY | db_type=SQLite | retries=3 | exec_time=0.0003s | error=(sqlite3.OperationalError) no such table: students
+[SQL: SELECT * FROM students LIMIT 5]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) | question='give me first 5 rows from student table' | sql='SELECT * FROM students LIMIT 5'
+2026-07-25 22:22:19,667 | INFO | database.connection | Connecting to SQLite database 'F:\Desktop\Chatsql_agentic\Chatsql\database\Student.db'
+2026-07-25 22:22:20,102 | INFO | database.connection | Connected successfully to SQLite.
+2026-07-25 22:22:45,389 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:22:45,414 | INFO | __main__ | QUERY | db_type=SQLite | retries=0 | exec_time=0.0052s | error=None | question='Give me the table name' | sql="SELECT name FROM sqlite_master WHERE type='table'"
+2026-07-25 22:23:08,882 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:23:09,328 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:23:09,474 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:23:09,635 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:23:09,639 | INFO | __main__ | QUERY | db_type=SQLite | retries=3 | exec_time=0.0004s | error=(sqlite3.OperationalError) no such table: your_table_name
+[SQL: SELECT * FROM your_table_name LIMIT 5 OFFSET 0]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) | question='give me first 5 rows from the database' | sql='SELECT * FROM your_table_name LIMIT 5 OFFSET 0'
+2026-07-25 22:26:51,746 | INFO | database.connection | Connecting to SQLite database 'F:\Desktop\Chatsql_agentic\Chatsql\database\Student.db'
+2026-07-25 22:26:51,778 | INFO | database.connection | Connected successfully to SQLite.
+2026-07-25 22:27:18,316 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 22:27:18,354 | INFO | __main__ | QUERY | db_type=SQLite | retries=0 | exec_time=0.0061s | error=None | question='what is the name of the table in database' | sql="SELECT name FROM sqlite_master WHERE type='table'"
+2026-07-25 23:00:43,174 | INFO | database.connection | Connecting to SQLite database 'F:\Desktop\Chatsql_agentic\Chatsql\database\Student.db'
+2026-07-25 23:00:43,271 | INFO | database.connection | Connected successfully to SQLite.
+2026-07-25 23:01:04,994 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 23:01:05,577 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 23:01:06,940 | INFO | __main__ | QUERY | db_type=SQLite | retries=0 | exec_time=0.0144s | error=None | question='What is the table name in this database' | sql="SELECT name FROM sqlite_master WHERE type='table'"
+2026-07-25 23:01:23,918 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 23:01:24,404 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-25 23:01:24,581 | INFO | __main__ | QUERY | db_type=SQLite | retries=0 | exec_time=0.0099s | error=None | question='Give me first 5 rows in this table' | sql='SELECT * FROM Students LIMIT 5'
