@@ -27,12 +27,14 @@ langchain-mysql
 SQLAlchemy
 validators==0.28.1
 youtube-transcript-api
-unstructured
+unstructured==0.23.1
 pytube==15.0.0
 numexpr
 duckduckgo-search
-psycopg2
+psycopg2-binary
 langgraph
 pymysql
 pyodbc
 openpyxl
+numba==0.66.0
+llvmlite==0.48.0
